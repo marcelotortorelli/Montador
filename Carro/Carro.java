@@ -1,21 +1,19 @@
-package Partes;
+package Carro;
 
-public class Partes {
-
-
-        private static Integer quantidadeRodas;
-        private static Integer quantidadeValvulas;
-        private static double tipoMotor;
-        private static Integer quantidadePortas;
-        private static Integer quantidadeCalotas;
-        private static Integer quantidadeParafusosRoda;
-        private static Integer numeroChassi;
-        private static Integer anoFabricacao;
-        private static String tipoCombustivel;
+public class Carro {
+    private static Integer quantidadeRodas;
+    private static Integer quantidadeValvulas;
+    private static double tipoMotor;
+    private static Integer quantidadePortas;
+    private static Integer quantidadeCalotas;
+    private static Integer quantidadeParafusosRoda;
+    private static Integer numeroChassi;
+    private static Integer anoFabricacao;
+    private static String tipoCombustivel;
 
 
 
-    public Partes (Integer quantidadeRodas, Integer numeroChassi, Integer anoFabricacao,
+    public Carro (Integer quantidadeRodas, Integer numeroChassi, Integer anoFabricacao,
                    String tipoCombustivel, double tipoMotor,
                    Integer quantidadeValvulas, Integer quantidadePortas){
         setQuantidadeRodas(quantidadeRodas);
@@ -51,12 +49,12 @@ public class Partes {
         this.setQuantidadeParafusosRoda();
     }
 
-    public static final String ARO = "Pneus aro 17''";
+    public static final String ARO = "Pneus aro 22''";
     public static void setTire(String tire){
         System.out.println(tire);
     }
 
-    public static final String GRAY = "Cinza";
+    public static final String GRAY = "Vermelho";
 
     public static void setColor(String color) {
         System.out.println("-----CARROCERIA-----");
@@ -68,7 +66,7 @@ public class Partes {
     }
 
     public static void setQuantidadeValvulas(Integer quantidadeValvulas) {
-        Partes.quantidadeValvulas = quantidadeValvulas;
+        Carro.quantidadeValvulas = quantidadeValvulas;
     }
 
     public static double getTipoMotor() {
